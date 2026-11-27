@@ -1,0 +1,155 @@
+{
+ "python": "3.13.18",
+ "cwd": "/tmp/vercel_bundle_4svn4i9m",
+ "importable_mftool": false,
+ "importable_requests": false,
+ "importable_flask_cors": false,
+ "import_seconds": 0.59,
+ "health": {
+  "ready": true,
+  "source": "bundled_dataset",
+  "n_funds": 12,
+  "build_seconds": 6.63,
+  "datasets": {
+   "debt": "ok",
+   "gold": "ok",
+   "nifty_tri": "ok",
+   "nifty_valuation": "ok"
+  },
+  "deployment": {
+   "data_dir_exists": true,
+   "live_nav_fetching": false,
+   "python": "3.13.18",
+   "region": null,
+   "vercel": false
+  }
+ },
+ "n_funds": 12,
+ "fund_names": [
+  "Parag Parikh",
+  "Quant",
+  "Motilal Oswal",
+  "HDFC",
+  "Aditya Birla",
+  "ITI",
+  "Tata",
+  "Invesco",
+  "Bank of India",
+  "HSBC",
+  "Edelweiss",
+  "WhiteOak"
+ ],
+ "source": "bundled_dataset",
+ "scenario_evaluated": true,
+ "scenario_message": null,
+ "hypotheses": {
+  "H1": "DIRECTIONALLY SUPPORTED (not statistically significant)",
+  "H2": "SUPPORTED",
+  "H3": "SUPPORTED"
+ },
+ "mc_status": "ok",
+ "mc_parameter_source": "historical_daily_data",
+ "routes": {
+  "/api/health": {
+   "status": 200,
+   "seconds": 6.64,
+   "json": true,
+   "cold": true
+  },
+  "/api/funds": {
+   "status": 200,
+   "seconds": 0.0,
+   "json": true,
+   "cold": false
+  },
+  "/api/fund-metrics": {
+   "status": 200,
+   "seconds": 0.0,
+   "json": true,
+   "cold": false
+  },
+  "/api/data-quality": {
+   "status": 200,
+   "seconds": 0.0,
+   "json": true,
+   "cold": false
+  },
+  "/api/data-report": {
+   "status": 200,
+   "seconds": 0.0,
+   "json": true,
+   "cold": false
+  },
+  "/api/datasets": {
+   "status": 200,
+   "seconds": 0.0,
+   "json": true,
+   "cold": false
+  },
+  "/api/diagnostics": {
+   "status": 200,
+   "seconds": 0.0,
+   "json": true,
+   "cold": false
+  },
+  "/api/optimize?pe=22&pb=3.5": {
+   "status": 200,
+   "seconds": 0.65,
+   "json": true,
+   "cold": false
+  },
+  "/api/frontier": {
+   "status": 200,
+   "seconds": 0.0,
+   "json": true,
+   "cold": false
+  },
+  "/api/allocation-history": {
+   "status": 200,
+   "seconds": 0.0,
+   "json": true,
+   "cold": false
+  },
+  "/api/scenario": {
+   "status": 200,
+   "seconds": 0.0,
+   "json": true,
+   "cold": false
+  },
+  "/api/hypotheses": {
+   "status": 200,
+   "seconds": 0.0,
+   "json": true,
+   "cold": false
+  },
+  "/api/montecarlo": {
+   "status": 200,
+   "seconds": 0.0,
+   "json": true,
+   "cold": false
+  },
+  "/api/montecarlo?paths=2000&seed=3": {
+   "status": 200,
+   "seconds": 1.08,
+   "json": true,
+   "cold": false
+  },
+  "/api/meta": {
+   "status": 200,
+   "seconds": 0.0,
+   "json": true,
+   "cold": false
+  },
+  "/ (static page)": {
+   "status": 200
+  },
+  "/api/does-not-exist": {
+   "status": 404,
+   "json": true
+  }
+ },
+ "network_attempts": 0,
+ "peak_rss_mb": 216.2,
+ "bundle_project_files": 47,
+ "bundle_project_mb": 5.37
+}

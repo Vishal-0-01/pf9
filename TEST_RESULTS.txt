@@ -1,0 +1,3 @@
+Run 2026-11-27: 146 passed (pytest tests -q)
+Vercel CLI build + bundle emulation: tools/verify_vercel_build.py OK for dashboard preset Other and Flask
+Network-blocked bundle emulation: results/deployment_verification.json

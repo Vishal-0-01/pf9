@@ -1,0 +1,85 @@
+{
+  "debt": {
+    "end": "2024-12-31",
+    "file": "cleaned/debt.csv",
+    "max_gap_days": 5,
+    "median_spacing_days": 1.0,
+    "n_obs": 2158,
+    "note": "Weekend rows removed (listed in the quality report). Open/High/Low/Change% columns not used.",
+    "raw_files": {
+      "Nifty GS Compsite Historical Data.csv": "f9f445d5aa2a7137a9fac3b916772b9d735f7e31a085394fd2fb0d3f9aff011e"
+    },
+    "retrieved_on": "2026-11-27",
+    "sha256": "3f3acb7057986dc8f3acb153c2ea3f596ad1898925524dfe16464180b703b00d",
+    "source": "User-supplied Investing.com export 'Nifty GS Composite' (column 'Price' = daily close), 5 Apr 2016 to 31 Dec 2024. Provider label only; NOT confirmed against NSE as the Total Return Index (see docs/DATA_PROVENANCE.md)",
+    "start": "2016-04-05"
+  },
+  "fund_nav": {
+    "end": "2026-11-25",
+    "file": "cleaned/fund_nav.csv",
+    "n_obs": 29325,
+    "n_schemes": 12,
+    "raw_files": {
+      "mfpro_nav_12funds_2026-11-26.csv": "c45dc8ff6cb7e432e7b546c9533a9053db727878c1e660d838f1cec96579d97e"
+    },
+    "retrieved_on": "2026-11-27",
+    "sha256": "bca74f5ea2e8ed61b02a8fa9dacae56833378b29d5f6178ac34643c1f11ea676",
+    "source": "TIGZIG daily NAV download, file mfpro_nav_12funds_2026-11-26.csv (as stated by the project author)",
+    "start": "2013-01-01"
+  },
+  "gold": {
+    "end": "2026-11-19",
+    "file": "cleaned/gold.csv",
+    "max_gap_days": 65,
+    "median_spacing_days": 1.0,
+    "n_obs": 3536,
+    "note": "Spot parity in INR; excludes duties and taxes.",
+    "raw_files": {
+      "gold-price-history.csv": "56d95304ccf02b02984bb82533c99afcd54b7087484e397472fa2e339a6a33e0"
+    },
+    "retrieved_on": "2026-11-27",
+    "sha256": "101b8805d6cd3999770f9145ed4aba477c5b721755086918b968b1d1607dd7b4",
+    "source": "User-supplied gold-price-history.csv (INR per troy oz, derived from USD spot x INR/USD; original source not stated in the file)",
+    "start": "2010-05-07"
+  },
+  "nifty_tri": {
+    "end": "2024-12-31",
+    "file": "cleaned/nifty_tri.csv",
+    "max_gap_days": 6,
+    "median_spacing_days": 1.0,
+    "n_obs": 2721,
+    "note": "Gross total-return index. Net Total Return Index not used.",
+    "raw_files": {
+      "nifty_2014.csv": "e0cf8762acc927e1938dbb348fb65e3984b83fc8a90749aec5514a5b0f65c0cc",
+      "nifty_2015.csv": "62846eef73ee57957f8f8ed46e7082f90b8a2b103b327312afb381e1420e38a8",
+      "nifty_2016.csv": "1fec9fafc3472885844d28954dde45083cc719e08589faae963cb1ff43cbc1aa",
+      "nifty_2017.csv": "3f559e4b1ced5b90e3b18281b3dc466b011376427a0c62bb27d090102cdffabc",
+      "nifty_2018.csv": "eae9bec5e33b927858ee259c94a2995f8057bfbc231acb1f7424f128b44445c4",
+      "nifty_2019.csv": "b56e8622e0323bcf1615e458f1494b41d288ae4c13fb856931f926591cdf955e",
+      "nifty_2020.csv": "7d75b80cc03388f7d45e96e14232309620041647e93033a9ec18d6f9c69f9a0e",
+      "nifty_2021.csv": "b109b56fd3c53eef614bc7d7b2686e773c9e20c13082def4c1e2cb5c97557740",
+      "nifty_2022.csv": "214d18493c19a37a1467efd6e249ea8b18953b4562554608b313bdf8f58ce1e8",
+      "nifty_2023.csv": "40b6437ac4deecdb15f6f4a569d3182fc15b1dfd8f4fa66709fbf35c19683f27",
+      "nifty_2024.csv": "35062e6bd35baaf12d30c314f87bf56aad8b2b3df053a3fb0546d7b122907b2a"
+    },
+    "retrieved_on": "2026-11-27",
+    "sha256": "48137f6fc641630dac723034fb316b6dc2606cb6bf8c1331ecfb0b67045895c0",
+    "source": "User-supplied annual files nifty_2014..nifty_2024.csv in NSE Indices format; column 'Total Returns Index' (original download site not stated by the supplier)",
+    "start": "2014-01-01"
+  },
+  "nifty_valuation": {
+    "end": "2026-11-26",
+    "file": "cleaned/nifty_valuation.csv",
+    "max_gap_days": 31,
+    "median_spacing_days": 31.0,
+    "n_obs": 335,
+    "note": "Monthly; see date convention in the quality report.",
+    "raw_files": {
+      "nifty-50-pe-history.csv": "b6d8757f6ae6860e8915cd12b1070ee4cac5874c811965e02cc1f4feadd432f3"
+    },
+    "retrieved_on": "2026-11-27",
+    "sha256": "91e492b9db4515f3991be50a63f25e2fa7cd502d8df3fac6e724ab3c49c276c7",
+    "source": "Downstox, https://downstox.com/nifty-pe/nifty-50 (as stated in the file header); monthly Nifty 50 P/E, P/B, dividend yield",
+    "start": "1999-01-31"
+  }
+}

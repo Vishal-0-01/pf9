@@ -1,0 +1,205 @@
+{
+ "H1": {
+  "bootstrap": {
+   "B": 2000,
+   "block": 21,
+   "seed": 20260825
+  },
+  "ci95": [
+   -0.20422184475756622,
+   0.23091010184368435
+  ],
+  "difference": 0.024733025024960442,
+  "difference_vs_neutral_optimised": 0.08703675303151226,
+  "evaluated": true,
+  "hypothesis": "Dynamic allocation Sharpe > static 70/20/10 Sharpe",
+  "period": "2017-12-29 to 2024-12-31",
+  "sensitivity": [
+   {
+    "cagr_dynamic": 0.12061245594748243,
+    "equity_final_range": [
+     0.5,
+     0.6614737898604858
+    ],
+    "mdd_dynamic": -0.21876424052490828,
+    "mdd_static": -0.25995606611555566,
+    "mdd_tri": -0.3826539905194035,
+    "sharpe_difference": 0.024733025024960442,
+    "sharpe_dynamic": 0.5395966690513133,
+    "sharpe_neutral_optimised": 0.45255991601980106,
+    "sharpe_static": 0.5148636440263529,
+    "variant": "primary (slope 0.10, expanding z, lag 0)"
+   },
+   {
+    "cagr_dynamic": 0.1228184691580576,
+    "equity_final_range": [
+     0.5,
+     0.6433
+    ],
+    "mdd_dynamic": -0.22040367738256428,
+    "mdd_static": -0.25995606611555566,
+    "mdd_tri": -0.3826539905194035,
+    "sharpe_difference": 0.04059474590680201,
+    "sharpe_dynamic": 0.5554583899331549,
+    "sharpe_neutral_optimised": 0.45255991601980106,
+    "sharpe_static": 0.5148636440263529,
+    "variant": "synopsis constants for z (P/E 22 +/- 5, P/B 3.2 +/- 0.6)"
+   },
+   {
+    "cagr_dynamic": 0.1173793936812441,
+    "equity_final_range": [
+     0.5,
+     0.676688
+    ],
+    "mdd_dynamic": -0.21977630188581165,
+    "mdd_static": -0.25995606611555566,
+    "mdd_tri": -0.3826539905194035,
+    "sharpe_difference": -0.007358067902831444,
+    "sharpe_dynamic": 0.5075055761235214,
+    "sharpe_neutral_optimised": 0.45255991601980106,
+    "sharpe_static": 0.5148636440263529,
+    "variant": "valuation reading lagged one month"
+   },
+   {
+    "cagr_dynamic": 0.11660628188392352,
+    "equity_final_range": [
+     0.5,
+     0.676737
+    ],
+    "mdd_dynamic": -0.23670140364040382,
+    "mdd_static": -0.25995606611555566,
+    "mdd_tri": -0.3826539905194035,
+    "sharpe_difference": -0.03243256280120527,
+    "sharpe_dynamic": 0.4824310812251476,
+    "sharpe_neutral_optimised": 0.45255991601980106,
+    "sharpe_static": 0.5148636440263529,
+    "variant": "slope 0.05"
+   },
+   {
+    "cagr_dynamic": 0.12340069351004603,
+    "equity_final_range": [
+     0.5,
+     0.6422106847907287
+    ],
+    "mdd_dynamic": -0.20108118985155066,
+    "mdd_static": -0.25995606611555566,
+    "mdd_tri": -0.3826539905194035,
+    "sharpe_difference": 0.06932115171680486,
+    "sharpe_dynamic": 0.5841847957431577,
+    "sharpe_neutral_optimised": 0.45255991601980106,
+    "sharpe_static": 0.5148636440263529,
+    "variant": "slope 0.15"
+   }
+  ],
+  "sharpe_dynamic": 0.5395966690513133,
+  "sharpe_neutral_optimised": 0.45255991601980106,
+  "sharpe_nifty_tri": 0.4051657834481524,
+  "sharpe_static": 0.5148636440263529,
+  "verdict": "DIRECTIONALLY SUPPORTED (not statistically significant)"
+ },
+ "H2": {
+  "comparable_return_tolerance": 0.01,
+  "defensive_parameter_source": {
+   "debt": "historical_daily_data",
+   "gold": "historical_daily_data"
+  },
+  "evaluated": true,
+  "exante_in_sample": {
+   "return_comparable": true,
+   "return_equal_weight": 0.18243388354841997,
+   "return_optimised": 0.18848776801788494,
+   "verdict": "SUPPORTED",
+   "vol_equal_weight": 0.13058050880773045,
+   "vol_optimised": 0.1273776753839714
+  },
+  "holdout": {
+   "expected_return_equal_fit": 0.22183582323667206,
+   "expected_return_optimised_fit": 0.2244431510545018,
+   "fit_window": [
+    "2023-02-23",
+    "2025-01-10"
+   ],
+   "lower": false,
+   "n_test_obs": 461,
+   "test_window": [
+    "2025-01-13",
+    "2026-11-25"
+   ],
+   "vol_equal_weight_test": 0.13730760167160355,
+   "vol_optimised_test": 0.13865394613116724
+  },
+  "hypothesis": "Optimised equity sleeve volatility < equal-weight sleeve volatility, comparable expected return",
+  "note": "Verdict rests on the in-sample ex-ante comparison; realised in-sample and hold-out evidence are reported alongside and may disagree. The optimiser maximises return, not minimises volatility.",
+  "optimised_allocation": {
+   "debt": 0.0,
+   "equity": 0.7255,
+   "gold": 0.2745,
+   "port_vol": 0.0999,
+   "status": "target_met"
+  },
+  "optimised_weights": {
+   "Aditya Birla": 0.051939,
+   "Bank of India": 0.091643,
+   "Edelweiss": 0.03,
+   "HDFC": 0.154992,
+   "HSBC": 0.03,
+   "ITI": 0.155672,
+   "Invesco": 0.109393,
+   "Motilal Oswal": 0.091073,
+   "Parag Parikh": 0.141955,
+   "Quant": 0.03,
+   "Tata": 0.03,
+   "WhiteOak": 0.083333
+  },
+  "realised_in_sample": {
+   "lower": true,
+   "n_obs": 921,
+   "vol_equal_weight": 0.1298327024112001,
+   "vol_optimised": 0.12660838458752516,
+   "window": [
+    "2023-02-23",
+    "2026-11-25"
+   ]
+  },
+  "supplementary_matched_return_min_variance": {
+   "expected_return": 0.18243388354841963,
+   "holdout": {
+    "lower": true,
+    "vol_equal_weight_test": 0.13730760167160355,
+    "vol_matched_min_variance_test": 0.11934860463475024
+   },
+   "lower": true,
+   "scope": "in-sample, ex-ante",
+   "vol_equal_weight": 0.13058050880773045,
+   "vol_matched_min_variance": 0.1169509888728074
+  },
+  "valuation_inputs": {
+   "pb": 3.18,
+   "pe": 21.08,
+   "source": "supplied"
+  },
+  "verdict": "SUPPORTED"
+ },
+ "H3": {
+  "difference_in_magnitude": 0.16388974999449524,
+  "dynamic_peak_trough": [
+   "2020-02-24",
+   "2020-03-23"
+  ],
+  "evaluated": true,
+  "hypothesis": "Dynamic portfolio max drawdown < Nifty 50 TRI max drawdown",
+  "max_drawdown_dynamic": -0.21876424052490828,
+  "max_drawdown_nifty_tri": -0.3826539905194035,
+  "mdd_difference_ci95_dynamic_minus_tri": [
+   0.05389580610243376,
+   0.2639869114570411
+  ],
+  "period": "2017-12-29 to 2024-12-31",
+  "tri_peak_trough": [
+   "2020-01-14",
+   "2020-03-23"
+  ],
+  "verdict": "SUPPORTED"
+ },
+ "rules": "hypotheses.py - evaluation of the three approved hypotheses. Verdict rules are declared here, before any result.\n\nH1 Sharpe(dynamic, optimiser-determined weights) > Sharpe(static 70/20/10, fixed weights used only as a comparator)             [historical scenario, daily data; the synopsis static\n   70/18/10/2 mix with its 2% cash weight moved to debt because cash is not an asset class]\n   point estimate of the difference; paired moving-block bootstrap (block 21 obs, B=BOOT_B, seed BOOT_SEED) gives a\n   95% percentile CI. Verdict: SUPPORTED if diff > 0 and CI lower bound > 0; DIRECTIONALLY SUPPORTED (not\n   statistically significant) if diff > 0 and CI includes 0; NOT SUPPORTED if diff <= 0.\nH2 Optimised, vol-constrained equity sleeve has lower volatility than the equal-weight sleeve over the same funds,\n   for a comparable expected return [fund NAVs]. Comparable = optimised expected return >= equal-weight expected\n   return - COMPARABLE_RETURN_TOL (1.0 pp). Verdict: SUPPORTED if vol_opt < vol_eq and return comparable;\n   LOWER VOLATILITY BUT RETURN NOT COMPARABLE if vol_opt < vol_eq and return lower by more than the tolerance;\n   NOT SUPPORTED if vol_opt >= vol_eq. Evidence: (a) ex-ante (model covariance, in-sample), (b) realised on the\n   common daily window (in-sample), (c) single-split hold-out: weights fitted on the first half of the common window,\n   volatility measured on the second half.\nH3 Max drawdown of the dynamic portfolio is lower (smaller in magnitude) than that of the Nifty 50 TRI [historical\n   scenario, daily data]. Verdict: SUPPORTED if |MDD_dynamic| < |MDD_TRI|, else NOT SUPPORTED. A bootstrap interval for\n   the drawdown difference is also reported (same resampling scheme).\nNothing is \"assumed to hold\": if the data needed are unavailable the verdict is NOT EVALUATED."
+}

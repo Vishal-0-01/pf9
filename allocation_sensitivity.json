@@ -1,0 +1,75 @@
+{
+ "latest_valuation": {
+  "date": "2026-11-26",
+  "pe": 21.08,
+  "pb": 3.18
+ },
+ "valuation_sensitivity": [
+  {
+   "pe": 14,
+   "pb": 2.0,
+   "z": -1.8272,
+   "equity_target": 0.8827,
+   "equity": 0.8708,
+   "debt": 0.087,
+   "gold": 0.0422,
+   "port_vol": 0.0999,
+   "constraint_status": "equity_reduced_to_meet_vol_cap"
+  },
+  {
+   "pe": 18,
+   "pb": 2.6,
+   "z": -0.9838,
+   "equity_target": 0.7984,
+   "equity": 0.7984,
+   "debt": 0.0,
+   "gold": 0.2016,
+   "port_vol": 0.0999,
+   "constraint_status": "target_met"
+  },
+  {
+   "pe": 21.08,
+   "pb": 3.18,
+   "z": -0.2549,
+   "equity_target": 0.7255,
+   "equity": 0.7255,
+   "debt": 0.0,
+   "gold": 0.2745,
+   "port_vol": 0.0999,
+   "constraint_status": "target_met"
+  },
+  {
+   "pe": 26,
+   "pb": 3.8,
+   "z": 0.703,
+   "equity_target": 0.6297,
+   "equity": 0.6297,
+   "debt": 0.0,
+   "gold": 0.3703,
+   "port_vol": 0.0999,
+   "constraint_status": "target_met"
+  },
+  {
+   "pe": 32,
+   "pb": 4.6,
+   "z": 1.9007,
+   "equity_target": 0.5099,
+   "equity": 0.5099,
+   "debt": 0.0,
+   "gold": 0.4901,
+   "port_vol": 0.097415,
+   "constraint_status": "target_met"
+  },
+  {
+   "pe": 40,
+   "pb": 6.0,
+   "z": 3.7222,
+   "equity_target": 0.5,
+   "equity": 0.5,
+   "debt": 0.0,
+   "gold": 0.5,
+   "port_vol": 0.097392,
+   "constraint_status": "target_met"
+  }
+ ]
+}

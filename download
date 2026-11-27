@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.vercel/
+.env
+tests/*.png
+uv.lock
+pyproject.toml.vercel-generated

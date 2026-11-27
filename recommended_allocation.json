@@ -1,0 +1,167 @@
+{
+ "allocation_method": "equity from the valuation rule; fund weights and the debt/gold split by joint SLSQP maximising expected return under the volatility cap (no minimum for debt or gold)",
+ "concentration_hhi": 0.1103,
+ "constraint_check": {
+  "allocation_ok": true,
+  "bounds_ok": true,
+  "equity_range_ok": true,
+  "max_weight": 0.155672,
+  "min_weight": 0.03,
+  "ok": true,
+  "portfolio_vol": 0.09989999,
+  "sum_ok": true,
+  "vol_cap": 0.1,
+  "vol_ok": true,
+  "weight_sum": 1.0
+ },
+ "constraint_ok": true,
+ "constraint_status": "target_met",
+ "cost_estimate": 0.000978912,
+ "debt": 0.0,
+ "debt_gold_at_zero": [
+  "debt"
+ ],
+ "defensive_parameter_source": {
+  "debt": "historical_daily_data",
+  "gold": "historical_daily_data"
+ },
+ "delta_weights": [
+  0.05862166666666667,
+  -0.05333333333333333,
+  0.0077396666666666725,
+  0.07165866666666666,
+  -0.03139433333333333,
+  0.07233866666666668,
+  -0.05333333333333333,
+  0.026059666666666675,
+  0.008309666666666674,
+  -0.05333333333333333,
+  -0.05333333333333333,
+  -3.3333333332441484e-07
+ ],
+ "eq_vol": 0.1274,
+ "equity": 0.7255,
+ "equity_range_ok": true,
+ "equity_rule": "E = clip(0.70 - 0.10 z, 0.50, 0.90)",
+ "equity_target": 0.7255,
+ "expected_returns": {
+  "debt": 0.0718904681624493,
+  "equity_sleeve": 0.18848776801788494,
+  "gold": 0.11621441948496088
+ },
+ "fund_names": [
+  "Parag Parikh",
+  "Quant",
+  "Motilal Oswal",
+  "HDFC",
+  "Aditya Birla",
+  "ITI",
+  "Tata",
+  "Invesco",
+  "Bank of India",
+  "HSBC",
+  "Edelweiss",
+  "WhiteOak"
+ ],
+ "fund_returns": [
+  0.1661,
+  0.1768,
+  0.1959,
+  0.187,
+  0.1728,
+  0.214,
+  0.1456,
+  0.1993,
+  0.2045,
+  0.1749,
+  0.1691,
+  0.1833
+ ],
+ "fund_sharpes": [
+  1.042,
+  0.701,
+  0.816,
+  1.046,
+  0.843,
+  0.97,
+  0.657,
+  0.916,
+  0.838,
+  0.742,
+  0.751,
+  0.907
+ ],
+ "fund_vols": [
+  0.097,
+  0.1595,
+  0.1603,
+  0.1166,
+  0.1278,
+  0.1536,
+  0.1227,
+  0.1466,
+  0.1664,
+  0.1482,
+  0.1387,
+  0.1305
+ ],
+ "fund_weights": [
+  0.141955,
+  0.03,
+  0.091073,
+  0.154992,
+  0.051939,
+  0.155672,
+  0.03,
+  0.109393,
+  0.091643,
+  0.03,
+  0.03,
+  0.083333
+ ],
+ "gold": 0.2745,
+ "independent_verification": {
+  "all_ok": true,
+  "checks": {
+   "asset_weights_non_negative": true,
+   "asset_weights_sum_to_one": true,
+   "fund_weights_sum_to_one": true,
+   "fund_weights_within_3_25": true,
+   "n_funds": 12,
+   "volatility_within_cap": true
+  },
+  "independent_vol": 0.09990063838950322,
+  "reported_vol": 0.0999,
+  "vol_difference": 6.383895032185949e-07
+ },
+ "objective": "return",
+ "pb": 3.18,
+ "pe": 21.08,
+ "port_ret": 0.1686,
+ "port_vol": 0.0999,
+ "rebalance_action": "REBALANCE",
+ "semi_vol": 0.1085,
+ "sharpe": 1.0375,
+ "sortino": 0.9552,
+ "status": "target_met",
+ "turnover": 0.489456,
+ "turnover_baseline": "equal weights (not the user's actual holdings)",
+ "vol_ceiling_binding": true,
+ "z": -0.2549,
+ "z_basis": {
+  "history_end": "2026-11-26",
+  "history_start": "1999-01-31",
+  "method": "expanding_window",
+  "n_months": 335,
+  "pb": [
+   3.5927462686567164,
+   0.7423051840893042
+  ],
+  "pe": [
+   20.869522388059703,
+   4.553362422654514
+  ]
+ },
+ "z_pb": -0.556,
+ "z_pe": 0.0462
+}
